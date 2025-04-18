@@ -1,0 +1,51 @@
+{
+  "name": "mui-create-material-you-theme",
+  "version": "1.0.0",
+  "main": "dist/mui-create-material-you-theme.umd.js",
+  "module": "dist/mui-create-material-you-theme.es.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "prepare": "npm run build",
+    "build": "vite build",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write .",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.0.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@fontsource/roboto": "^5.2.5",
+    "@mui/icons-material": "^7.0.2",
+    "@mui/material": "^7.0.2",
+    "@storybook/addon-essentials": "^8.6.12",
+    "@storybook/addon-themes": "^8.6.12",
+    "@storybook/react-vite": "^8.0.0",
+    "@types/react": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.30.1",
+    "@typescript-eslint/parser": "^8.30.1",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.6",
+    "eslint-plugin-react": "^7.0.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0",
+    "vite-plugin-dts": "^4.5.3"
+  },
+  "dependencies": {
+    "@fontsource-variable/playpen-sans": "^5.2.5",
+    "@material/material-color-utilities": "^0.3.0"
+  }
+}
