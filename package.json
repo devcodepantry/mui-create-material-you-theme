@@ -1,6 +1,6 @@
 {
   "name": "mui-create-material-you-theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/mui-create-material-you-theme.umd.js",
   "module": "dist/mui-create-material-you-theme.es.js",
   "types": "dist/index.d.ts",
@@ -23,6 +23,7 @@
   "devDependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
+    "@fontsource-variable/playpen-sans": "^5.2.5",
     "@fontsource/roboto": "^5.2.5",
     "@mui/icons-material": "^7.0.2",
     "@mui/material": "^7.0.2",
@@ -45,7 +46,6 @@
     "vite-plugin-dts": "^4.5.3"
   },
   "dependencies": {
-    "@fontsource-variable/playpen-sans": "^5.2.5",
     "@material/material-color-utilities": "^0.3.0"
   }
 }

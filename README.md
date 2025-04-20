@@ -37,6 +37,26 @@ If you're interested in implementing stricter guideline compliance, we welcome c
 - Material You does not define colors for `info`, `success`, or `warning` (only `error` is included).
 - Material You introduces a `tertiary` color, which needs to be supported across all components that previously only used `primary` and `secondary`.
 
+## 📦 Installation
+
+You can install the package from NPM:
+
+```bash
+npm install mui-create-material-you-theme
+```
+
+This package is designed to work with **MUI v7** and **React 18+**.
+
+### ⚠️ Peer dependencies
+
+Make sure you have the following packages installed in your project:
+
+```bash
+npm install @mui/material @emotion/react @emotion/styled react react-dom
+```
+
+> If you are already using MUI in your project, you most likely already have these installed.
+
 ## 🚀 Usage
 
 For an example of how to integrate the theme in your app, check out the code in the [App.stories.tsx file](https://github.com/BobesCZ/mui-create-material-you-theme/blob/main/src/examples/apps/App.stories.tsx).
