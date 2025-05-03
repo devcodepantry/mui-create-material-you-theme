@@ -2,10 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## 1.1.0
 
 - Revert scrollbar display
 - Added stories for FAB, ToggleButton
+- Added styles for IconButton
 
 ## 1.0.2
 

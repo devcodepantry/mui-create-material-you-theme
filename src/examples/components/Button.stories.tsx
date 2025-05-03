@@ -83,14 +83,6 @@ export const AllVariants: Story = {
           </Stack>
         </div>
       ))}
-      {/* <div>
-        <Typography variant="h6" gutterBottom>Icon Button</Typography>
-        {colors.map((color) => (
-          <IconButton key={color} color={color} {...args}>
-            <Delete fontSize={args.size} />
-          </IconButton>
-        ))}
-      </div> */}
     </Stack>
   ),
 }
