@@ -33,7 +33,7 @@ export const BasicDrawer: Story = {
         <List>
           {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
             <ListItem key={text} disablePadding>
-              <ListItemButton>
+              <ListItemButton selected={index === 0}>
                 <ListItemIcon>{index % 2 === 0 ? <Inbox /> : <Mail />}</ListItemIcon>
                 <ListItemText primary={text} />
               </ListItemButton>

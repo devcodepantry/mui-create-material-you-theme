@@ -67,7 +67,9 @@ export const AllVariants: Story = {
     <Stack spacing={4}>
       {variants.map((variant) => (
         <div key={variant}>
-          <Typography variant="h6">{variant}</Typography>
+          <Typography variant="h6" gutterBottom>
+            {variant}
+          </Typography>
           <Stack direction="row" spacing={2}>
             {colors.map((color) => (
               <PreviewButton
@@ -82,7 +84,7 @@ export const AllVariants: Story = {
         </div>
       ))}
       {/* <div>
-        <Typography variant="h6">Icon Button</Typography>
+        <Typography variant="h6" gutterBottom>Icon Button</Typography>
         {colors.map((color) => (
           <IconButton key={color} color={color} {...args}>
             <Delete fontSize={args.size} />
