@@ -2,9 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## [Unreleased]
+
+## 1.2.0
 
 - Changed color mappings in getMaterialYouPalette
+- Fix styles for ListItemButton
 
 ## 1.1.0
 

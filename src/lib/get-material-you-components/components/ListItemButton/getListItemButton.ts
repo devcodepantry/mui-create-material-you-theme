@@ -8,6 +8,8 @@ export const getListItemButton = ({ palette }: Theme): MaterialYouListItemButton
     MuiListItemButton: {
       styleOverrides: {
         root: {
+          marginLeft: 8,
+          marginRight: 8,
           borderRadius: 50,
           color: palette.onSurfaceVariant.main,
           '&:hover': {
@@ -37,9 +39,6 @@ export const getListItemButton = ({ palette }: Theme): MaterialYouListItemButton
           '&.Mui-selected': {
             color: palette.onSecondaryContainer.main,
             background: palette.secondaryContainer.main,
-            '& > .MuiListItemText-root > .MuiTypography-root': {
-              fontWeight: 'bold',
-            },
             '&:hover': {
               backgroundColor: getStateLayerColor(
                 StateLayer.Hover,

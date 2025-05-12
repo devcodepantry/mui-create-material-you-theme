@@ -9,9 +9,6 @@ export const getListItemIcon = (_theme: Theme): MaterialYouListItemIcon => {
         root: {
           color: 'inherit',
           minWidth: 32,
-          '&.Mui-selected': {
-            fontWeight: 'bold',
-          },
         },
       },
     },

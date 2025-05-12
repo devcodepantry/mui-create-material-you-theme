@@ -1,5 +1,14 @@
-import { Inbox, Mail } from '@mui/icons-material'
-import { Box, List, ListItemButton, ListItemIcon, ListItemText } from '@mui/material'
+import { BeachAccess, Image, Inbox, Mail, Work } from '@mui/icons-material'
+import {
+  Avatar,
+  Box,
+  List,
+  ListItem,
+  ListItemAvatar,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+} from '@mui/material'
 import { Meta, StoryObj } from '@storybook/react'
 
 const meta: Meta = {
@@ -13,9 +22,15 @@ export default meta
 
 type Story = StoryObj
 
-export const BasicList: Story = {
+export const BasicListItemButton: Story = {
   render: () => (
-    <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+    <Box
+      sx={({ palette }) => ({
+        width: '100%',
+        maxWidth: 360,
+        bgcolor: palette.surfaceContainer.main,
+      })}
+    >
       <List>
         <ListItemButton selected>
           <ListItemText primary="Inbox" />
@@ -31,9 +46,15 @@ export const BasicList: Story = {
   ),
 }
 
-export const ListWithIcons: Story = {
+export const BasicListItemIcon: Story = {
   render: () => (
-    <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+    <Box
+      sx={({ palette }) => ({
+        width: '100%',
+        maxWidth: 360,
+        bgcolor: palette.surfaceContainer.main,
+      })}
+    >
       <List>
         <ListItemButton selected>
           <ListItemIcon>
@@ -58,9 +79,15 @@ export const ListWithIcons: Story = {
   ),
 }
 
-export const ListWithDifferentText: Story = {
+export const BasicListItemText: Story = {
   render: () => (
-    <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+    <Box
+      sx={({ palette }) => ({
+        width: '100%',
+        maxWidth: 360,
+        bgcolor: palette.surfaceContainer.main,
+      })}
+    >
       <List>
         <ListItemButton selected>
           <ListItemText primary="Primary Text" secondary="Secondary Text" />
@@ -68,6 +95,45 @@ export const ListWithDifferentText: Story = {
         <ListItemButton>
           <ListItemText primary="Another Item" secondary="Secondary description" />
         </ListItemButton>
+      </List>
+    </Box>
+  ),
+}
+
+export const BasicListItemAvatar: Story = {
+  render: () => (
+    <Box
+      sx={({ palette }) => ({
+        width: '100%',
+        maxWidth: 360,
+        bgcolor: palette.surfaceContainer.main,
+      })}
+    >
+      <List>
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <Image />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText primary="Photos" secondary="Jan 9, 2014" />
+        </ListItem>
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <Work />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText primary="Work" secondary="Jan 7, 2014" />
+        </ListItem>
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <BeachAccess />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText primary="Vacation" secondary="July 20, 2014" />
+        </ListItem>
       </List>
     </Box>
   ),
