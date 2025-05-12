@@ -268,19 +268,15 @@ export const getMaterialYouPalette = (
     },
 
     background: {
-      default: surfaceContainer,
+      default: background,
       paper: surface,
     },
     onBackground: {
-      main: onSurface,
-    },
-    common: {
-      white: background,
-      black: onBackground,
+      main: onBackground,
     },
     text: {
       primary: onSurface,
-      secondary: onSecondaryContainer,
+      secondary: onSurfaceVariant,
     },
 
     info: {

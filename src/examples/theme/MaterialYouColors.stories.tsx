@@ -412,7 +412,7 @@ export const PreviewColors: React.FC = () => {
 }
 
 const meta: Meta<typeof PreviewColors> = {
-  title: 'Theme/Colors',
+  title: 'Theme/MaterialYouColors',
   component: PreviewColors,
   parameters: {
     controls: { hideNoControlsWarning: true },

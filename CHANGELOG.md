@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+- Changed color mappings in getMaterialYouPalette
+
 ## 1.1.0
 
 - Revert scrollbar display
